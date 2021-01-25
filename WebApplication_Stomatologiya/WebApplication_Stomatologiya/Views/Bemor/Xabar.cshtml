@@ -1,0 +1,29 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "YangiBemor";
+}
+@foreach (DoktorVaqti d in Model.DoktorVaqti)
+{
+    <h3><font color="red"> @d.Bemor.Familya @d.Bemor.Ism @d.Bemor.Sharif</font>  bugun soat @d.vaqti da <font color="blue"> @d.Doktor.Stomatologiya.Nomi </font> stomatologiyasiga ko'rikga borishingiz kerak</h3>
+}
+    <br /><br />
+<div class="row">
+    @foreach (BemorgaXabar d in Model.BemorgaXabar)
+    {
+        <div class="col-md-10" style="font-size:20px;">
+            @d.Matni
+            <hr />
+
+        </div>
+    <div class="col-md-2" style="font-size:20px;">
+        <a href="/Bemor/XabarniTas/@d.Id"><font color="blue">O'qildi</font></a>
+        
+
+    </div>
+
+    }
+</div>
+
+<br /><br />

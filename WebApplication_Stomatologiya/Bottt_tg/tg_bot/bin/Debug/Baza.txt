@@ -1,0 +1,1 @@
+Data Source=(LocalDB)\v11.0;AttachDbFilename="C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\WebApplication_Stomatologiya\App_Data\BazaTish.mdf";Integrated Security=True

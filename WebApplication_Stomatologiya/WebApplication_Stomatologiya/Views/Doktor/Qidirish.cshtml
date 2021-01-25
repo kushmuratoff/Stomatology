@@ -1,0 +1,34 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+<div style="margin-left:3%; margin-top:30px;">
+    <form class="form-horizontal" action="/Doktor/Qidirish" method="post">
+        <input type="text" style="border-bottom-left-radius: 12px; border-top-left-radius: 12px;" name="nom" placeholder="Qidirish..." /><input type="submit" value="Ok" style="border-bottom-right-radius: 12px; border-top-right-radius: 12px; background-color:green;" />
+    </form>
+</div>
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                @foreach (Doktor s in Model.Doktor)
+                {
+                    <div class="col-md-4 col-sm-12 w3_ban1">
+                        <div class="card">
+                            <img class="card-img-top" src="/Rasmlar/@s.Rasm" alt="Card image cap" width="400" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">@s.Familya @s.Ism @s.Sharif </h5>
+
+                                <p class="card-text">@s.YashManzil</p>
+                                <p class="card-text">Tel: @s.TelNomer</p>
+                                <h4 class="card-text">Ish Joyi: @s.Stomatologiya.Nomi</h4>
+
+
+                                <a href="/Doktor/Qabul/@s.Id" class="btn btn-primary">Qabuliga yozilish</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

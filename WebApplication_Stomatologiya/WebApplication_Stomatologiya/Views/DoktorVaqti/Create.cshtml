@@ -1,0 +1,68 @@
+﻿@model WebApplication_Stomatologiya.Models.DoktorVaqti
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>DoktorVaqti</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DoktorId, "DoktorId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DoktorId", String.Empty)
+                @Html.ValidationMessageFor(model => model.DoktorId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BemorId, "BemorId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("BemorId", String.Empty)
+                @Html.ValidationMessageFor(model => model.BemorId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sanasi, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Sanasi)
+                @Html.ValidationMessageFor(model => model.Sanasi)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.vaqti, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.vaqti)
+                @Html.ValidationMessageFor(model => model.vaqti)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.holati, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.holati)
+                @Html.ValidationMessageFor(model => model.holati)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

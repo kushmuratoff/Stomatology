@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Saqlash";
+}
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil"></i>
+
+                </div>
+                <div class="form">
+                    <h3>Ma'lumotlaringizni kiriting</h3>
+                    <p style="color: red; text-align: center">@ViewBag.habar</p>
+                    <form action="/Home/Saqlash" method="post">
+                        <input type="text" name="Fam" placeholder="Familya" required="">
+                        <input type="text" name="Ism" placeholder="Ism" required="">
+                        <input type="text" name="Shar" placeholder="Sharf" required="">
+                        <label>Tugilgan sana</label> <input type="date" name="tugyil" placeholder="Tug'ilgan sana'" required="">
+                        <br /><br />
+                        <input type="text" name="tel" placeholder="Telefon raqam" required="">
+                        <input type="text" name="PasS" placeholder="Pasport  seria" required="">
+                        <input type="text" name="PasN" placeholder="Pasport  nomer" required="">
+                        <input type="text" name="Ktb" placeholder="Kim tomonidan berilgan" required="">
+                        <input type="text" name="Manzil" placeholder="Yashash manzili" required="">
+                        <input type="text" name="eskiK" placeholder="Eski kasalliklar" required="">                        
+                        <input type="text" name="Login" placeholder="Login" required="" value="@ViewBag.Login" hidden="hidden">
+                        <input type="text" name="Parol" placeholder="Parol" required="" value="@ViewBag.Parol" hidden="hidden">
+                        <input type="submit" value="Saqlash">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

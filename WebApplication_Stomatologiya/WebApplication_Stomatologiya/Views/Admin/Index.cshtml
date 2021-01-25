@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebApplication_Stomatologiya.Models.Stomatologiya>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@foreach (var item in Model)
+{
+
+    <div class="stonom">
+        @item.Nomi
+    </div>
+    <div style="text-align:center"><p>Manzil:<h4>@item.Manzil</h4></p></div>
+    <div style="text-align:center"><p>Telefon raqam:<h5>@item.TelNomer</h5></p></div>
+
+}
+<br />
+<div class="w3l_abtdwn">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 w3l_r1">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Admin/Doktorlar/@ViewBag.Id">Doktorlar</a></h4>
+        </div>
+        <div class="col-md-4 col-sm-12 w3l_c1">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Admin/BemorlarCon/@ViewBag.Id">Bemorlar</a></h4>
+        </div>
+        <div class="col-md-4 col-sm-12 w3l_l1">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Admin/Sozlamalar/@ViewBag.Id">Sozlamalar</a></h4>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12 w3l_r1">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Admin/Xisobot/@ViewBag.Id">Xisobotlar</a></h4>
+        </div>
+        <div class="col-md-4 col-sm-12 w3l_c1">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Admin/Tulovlar/@ViewBag.Id">To'lovlar</a></h4>
+        </div>
+        <div class="col-md-4 col-sm-12 w3l_c1">
+            <i class="fa fa-crosshairs" aria-hidden="true"></i>
+            <h4><a style="color:red;" href="/Yangilik/Umumiy/@ViewBag.Id">Yangiliklar</a></h4>
+        </div>
+       
+    </div>
+   
+</div>
+<br />
+<br />

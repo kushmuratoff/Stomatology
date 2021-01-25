@@ -1,0 +1,31 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+<br /><br />
+<div class="stonom">
+    Yangiliklar
+</div>
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                @foreach(Yangilik t in Model.Yangilik)
+                {
+                     <div class="col-md-4 col-sm-12 w3_ban1">
+                    <div class="card">
+                        <img class="card-img-top" src="/Rasmlar/@t.Rasm" alt="Card image cap" width="200" height="250">
+
+                        <div class="card-body">
+                            <p class=""> Stomatologiya:<font color="green;"> @t.Stomatologiya.Nomi</font></p>
+                            <b class="" style="font-size:25px;">Mavzu: <font color="blue"><b>@t.Mavzu</b></font></b>
+                            <p style="font-size:20px;">Vaqti: @t.Vaqti</p>
+                             <a href="/Home/Keng/@t.Id" class="btn btn-primary">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+                }
+               
+              
+            </div>
+        </div>
+    </div>
+</section>

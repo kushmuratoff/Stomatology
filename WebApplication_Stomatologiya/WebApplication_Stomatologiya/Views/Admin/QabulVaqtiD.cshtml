@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "QabulVaqti";
+}
+
+
+<form action="/Admin/VaqtSaqlash" method="post">
+    <input type="text" value="@ViewBag.sum" id="qiy" hidden="hidden" />
+    <br />
+    <input type="text" value="@ViewBag.vaqt" name="sana" hidden="hidden" /><br />
+    <input type="text" value="@ViewBag.Did" name="Did" hidden="hidden" /><br />
+    <input type="text" value="@ViewBag.Id" name="Id" hidden="hidden" /><br />
+
+    <label>Soat</label>
+    <select id="combo" style="width:180px;" name="vaqti"></select>
+    <input type="submit" value="Saqlash" class="btn btn-success" />
+</form>
+@*@ViewBag.vaqt
+    <h1>@ViewBag.kuni</h1>
+    <h1>@ViewBag.kel</h1>
+    <h1>@ViewBag.ket</h1>*@
+
+<br /><br />
+<script>
+
+    var qiy = document.getElementById("qiy").value;
+    bjoy = 0;
+    var select = document.getElementById("combo");
+    for (i = 0; i < qiy.length; i++) {
+        if (qiy[i] == " ") {
+            var suz = qiy.substring(bjoy, i);
+            // alert("." + suz + ".");
+            bjoy = i + 1;
+            select.options[select.options.length] = new Option(suz, suz);
+        }
+    }
+</script>

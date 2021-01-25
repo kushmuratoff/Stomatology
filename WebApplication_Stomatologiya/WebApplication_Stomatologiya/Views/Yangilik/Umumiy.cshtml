@@ -1,0 +1,48 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<a href="/Yangilik/Saqlash/@ViewBag.Id" style="color:green;">Yangilik qo'shish</a>
+
+<br /><br />
+
+<div class="row">
+    <div class="col-md-3" style="font-size:20px; color:blue;">
+        Mavzu
+        <hr />
+    </div>
+    <div class="col-md-3" style="font-size: 20px; color: blue;">
+        Vaqti
+    </div>
+    <div class="col-md-3" style="font-size: 20px; color: blue;">
+        Rasmi
+        </div>
+    <div class="col-md-3" style="font-size: 20px; color: blue;">
+        
+    </div>
+    @foreach (Yangilik d in Model.Yangilik)
+    {
+        <div class="col-md-3" style="font-size:20px;">
+            @d.Mavzu
+            <hr />
+
+        </div>
+        <div class="col-md-3" style="font-size:20px;">
+            @d.Vaqti
+
+        </div>
+        <div class="col-md-3" style="font-size:20px;">
+            <img  src="/Rasmlar/@d.Rasm" width="80"/>
+           
+        </div>
+         <div class="col-md-3" style="font-size:20px;">
+          <a href="/Yangilik/Remove/@d.Id"><font color="red">O'chirish</font></a>
+        </div>
+
+    }
+</div>
+
+<br /><br />

@@ -1,0 +1,33 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+<div style="margin-left:3%; margin-top:30px;">
+    <form class="form-horizontal" action="/Stomatologiya/Qidirish" method="post">
+        <input type="text" style="border-bottom-left-radius: 12px; border-top-left-radius: 12px;" name="nom" placeholder="Qidirish..." /><input type="submit" value="Ok" style="border-bottom-right-radius: 12px; border-top-right-radius: 12px; background-color:green;" />
+    </form>
+</div>
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                @foreach (Stomatologiya s in Model.Stomatologiya)
+                {
+                    <div class="col-md-4 col-sm-12 w3_ban1">
+                        <div class="card">
+                            <img class="card-img-top" src="/Rasmlar/@s.Logatip" alt="Card image cap" width="400" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">@s.Nomi</h5>
+                                <h5 class="card-title">@s.Tuman.Nomi tumani</h5>
+                                <p class="card-text">@s.Manzil</p>
+                                <p class="card-text">Tel: @s.TelNomer</p>
+
+                                <a href="/Stomatologiya/Kabinet/@s.Id" class="btn btn-primary">Batafsil</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

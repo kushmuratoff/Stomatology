@@ -1,0 +1,77 @@
+c:\users\asus2726\documents\visual studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\NetTelegramBotApi.dll
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.csprojResolveAssemblyReference.cache
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Asus2726\Documents\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Telegram.Bot.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.exe.config
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\NetTelegramBotApi.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Telegram.Bot.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Debug\Telegram.Bot.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Debug\tg_bot.csprojResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Debug\Telegram.Bot.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Debug\tg_bot.csprojFakesResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\bin\Debug\Telegram.Bot.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия — копия\tg_bot\obj\Debug\tg_bot.csprojFakesResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\bin\Debug\Telegram.Bot.xml
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\obj\Debug\tg_bot.csprojFakesResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\bin\Debug\Telegram.Bot.xml
+C:\Users\Samariddin\Desktop\Bottt_tg\tg_bot\obj\Debug\tg_bot.csprojFakesResolveAssemblyReference.cache
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\tg_bot.exe.config
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\obj\Debug\tg_bot.exe
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\obj\Debug\tg_bot.pdb
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\tg_bot.exe
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\tg_bot.pdb
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\Telegram.Bot.dll
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\bin\Debug\Telegram.Bot.xml
+C:\Users\Samariddin\Documents\Visual Studio 2013\Projects\WebApplication_Stomatologiya\Bottt_tg\tg_bot\obj\Debug\tg_bot.csprojFakesResolveAssemblyReference.cache

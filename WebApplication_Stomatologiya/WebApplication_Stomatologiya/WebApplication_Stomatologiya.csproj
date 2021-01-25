@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEC2397E-1F76-48D9-8FE2-ABA67878AA9A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication_Stomatologiya</RootNamespace>
+    <AssemblyName>WebApplication_Stomatologiya</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AsosiyController.cs" />
+    <Compile Include="Controllers\BemorController.cs" />
+    <Compile Include="Controllers\BotController.cs" />
+    <Compile Include="Controllers\DoktorController.cs" />
+    <Compile Include="Controllers\DoktorVaqtiController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IshVaqtiController.cs" />
+    <Compile Include="Controllers\KunController.cs" />
+    <Compile Include="Controllers\RollarController.cs" />
+    <Compile Include="Controllers\StomatologiyaController.cs" />
+    <Compile Include="Controllers\TishController.cs" />
+    <Compile Include="Controllers\TumanController.cs" />
+    <Compile Include="Controllers\UserlarController.cs" />
+    <Compile Include="Controllers\ViloyatController.cs" />
+    <Compile Include="Controllers\XulosaController.cs" />
+    <Compile Include="Controllers\YangilikController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905061305593_InitialCreate.cs" />
+    <Compile Include="Migrations\201905061305593_InitialCreate.Designer.cs">
+      <DependentUpon>201905061305593_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905061748060_yangi1.cs" />
+    <Compile Include="Migrations\201905061748060_yangi1.Designer.cs">
+      <DependentUpon>201905061748060_yangi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071226510_yangi2.cs" />
+    <Compile Include="Migrations\201905071226510_yangi2.Designer.cs">
+      <DependentUpon>201905071226510_yangi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071720146_yani3.cs" />
+    <Compile Include="Migrations\201905071720146_yani3.Designer.cs">
+      <DependentUpon>201905071720146_yani3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071734471_yangi4.cs" />
+    <Compile Include="Migrations\201905071734471_yangi4.Designer.cs">
+      <DependentUpon>201905071734471_yangi4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071832153_yangi5.cs" />
+    <Compile Include="Migrations\201905071832153_yangi5.Designer.cs">
+      <DependentUpon>201905071832153_yangi5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905071850342_yangi6.cs" />
+    <Compile Include="Migrations\201905071850342_yangi6.Designer.cs">
+      <DependentUpon>201905071850342_yangi6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905251242197_yangi7.cs" />
+    <Compile Include="Migrations\201905251242197_yangi7.Designer.cs">
+      <DependentUpon>201905251242197_yangi7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905260928334_yangi8.cs" />
+    <Compile Include="Migrations\201905260928334_yangi8.Designer.cs">
+      <DependentUpon>201905260928334_yangi8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905261956272_yangi9.cs" />
+    <Compile Include="Migrations\201905261956272_yangi9.Designer.cs">
+      <DependentUpon>201905261956272_yangi9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BazaContext.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\Sahifa.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roler\SiteRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Viloyat\Create.cshtml" />
+    <Content Include="Views\Viloyat\Delete.cshtml" />
+    <Content Include="Views\Viloyat\Details.cshtml" />
+    <Content Include="Views\Viloyat\Edit.cshtml" />
+    <Content Include="Views\Viloyat\Index.cshtml" />
+    <Content Include="Views\Tuman\Create.cshtml" />
+    <Content Include="Views\Tuman\Delete.cshtml" />
+    <Content Include="Views\Tuman\Details.cshtml" />
+    <Content Include="Views\Tuman\Edit.cshtml" />
+    <Content Include="Views\Tuman\Index.cshtml" />
+    <Content Include="Views\Bemor\Create.cshtml" />
+    <Content Include="Views\Bemor\Delete.cshtml" />
+    <Content Include="Views\Bemor\Details.cshtml" />
+    <Content Include="Views\Bemor\Edit.cshtml" />
+    <Content Include="Views\Bemor\Index.cshtml" />
+    <Content Include="Views\Doktor\Create.cshtml" />
+    <Content Include="Views\Doktor\Delete.cshtml" />
+    <Content Include="Views\Doktor\Details.cshtml" />
+    <Content Include="Views\Doktor\Edit.cshtml" />
+    <Content Include="Views\Doktor\Index.cshtml" />
+    <Content Include="Views\Rollar\Create.cshtml" />
+    <Content Include="Views\Rollar\Delete.cshtml" />
+    <Content Include="Views\Rollar\Details.cshtml" />
+    <Content Include="Views\Rollar\Edit.cshtml" />
+    <Content Include="Views\Rollar\Index.cshtml" />
+    <Content Include="Views\Stomatologiya\Create.cshtml" />
+    <Content Include="Views\Stomatologiya\Delete.cshtml" />
+    <Content Include="Views\Stomatologiya\Details.cshtml" />
+    <Content Include="Views\Stomatologiya\Edit.cshtml" />
+    <Content Include="Views\Userlar\Create.cshtml" />
+    <Content Include="Views\Userlar\Delete.cshtml" />
+    <Content Include="Views\Userlar\Details.cshtml" />
+    <Content Include="Views\Userlar\Edit.cshtml" />
+    <Content Include="Views\Userlar\Index.cshtml" />
+    <Content Include="Views\Xulosa\Create.cshtml" />
+    <Content Include="Views\Xulosa\Delete.cshtml" />
+    <Content Include="Views\Xulosa\Details.cshtml" />
+    <Content Include="Views\Xulosa\Edit.cshtml" />
+    <Content Include="Views\Xulosa\Index.cshtml" />
+    <Content Include="Views\Home\Krish.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\Saqlash.cshtml" />
+    <Content Include="Views\Admin\Sozlamalar.cshtml" />
+    <Content Include="Views\Admin\Doktorlar.cshtml" />
+    <Content Include="Views\Admin\Register.cshtml" />
+    <Content Include="Views\Admin\Saqlash.cshtml" />
+    <Content Include="Views\Doktor\Oyna.cshtml" />
+    <Content Include="Views\Stomatologiya\Kabinet.cshtml" />
+    <Content Include="Views\Bemor\Kabinet.cshtml" />
+    <Content Include="Views\Stomatologiya\Index.cshtml" />
+    <Content Include="Views\Tish\Create.cshtml" />
+    <Content Include="Views\Tish\Delete.cshtml" />
+    <Content Include="Views\Tish\Details.cshtml" />
+    <Content Include="Views\Tish\Edit.cshtml" />
+    <Content Include="Views\Tish\Index.cshtml" />
+    <Content Include="Views\Home\Keng.cshtml" />
+    <Content Include="Views\Kun\Create.cshtml" />
+    <Content Include="Views\Kun\Delete.cshtml" />
+    <Content Include="Views\Kun\Details.cshtml" />
+    <Content Include="Views\Kun\Edit.cshtml" />
+    <Content Include="Views\Kun\Index.cshtml" />
+    <Content Include="Views\IshVaqti\Create.cshtml" />
+    <Content Include="Views\IshVaqti\Delete.cshtml" />
+    <Content Include="Views\IshVaqti\Details.cshtml" />
+    <Content Include="Views\IshVaqti\Edit.cshtml" />
+    <Content Include="Views\IshVaqti\Index.cshtml" />
+    <Content Include="Views\Doktor\Qabul.cshtml" />
+    <Content Include="Views\Doktor\QabulVaqti.cshtml" />
+    <Content Include="Views\Doktor\VaqtSaqlash.cshtml" />
+    <Content Include="Views\DoktorVaqti\Create.cshtml" />
+    <Content Include="Views\DoktorVaqti\Delete.cshtml" />
+    <Content Include="Views\DoktorVaqti\Details.cshtml" />
+    <Content Include="Views\DoktorVaqti\Edit.cshtml" />
+    <Content Include="Views\DoktorVaqti\Index.cshtml" />
+    <Content Include="Views\Doktor\YangiBemor.cshtml" />
+    <Content Include="Views\Doktor\TashxisQ.cshtml" />
+    <Content Include="Views\Admin\Bemorlar.cshtml" />
+    <Content Include="Views\Admin\DokorIshV.cshtml" />
+    <Content Include="Views\IshVaqti\Vaqtlar.cshtml" />
+    <Content Include="Views\IshVaqti\YangiVaqt.cshtml" />
+    <Content Include="Views\IshVaqti\Change.cshtml" />
+    <Content Include="Views\Admin\Anketasi.cshtml" />
+    <Content Include="Views\Admin\BemorYV.cshtml" />
+    <Content Include="Views\Admin\QabulVaqtiD.cshtml" />
+    <Content Include="Views\Admin\VaqtSaqlash.cshtml" />
+    <Content Include="Views\Admin\Pfdga.cshtml" />
+    <Content Include="Views\Admin\JsonSearch.cshtml" />
+    <Content Include="Views\Bemor\AnketaT.cshtml" />
+    <Content Include="Views\Admin\Sto.cshtml" />
+    <Content Include="Views\Doktor\BugXabar.cshtml" />
+    <Content Include="Views\Bemor\Xabar.cshtml" />
+    <Content Include="Views\Admin\Xisobot.cshtml" />
+    <Content Include="Views\Admin\BemorlarCon.cshtml" />
+    <Content Include="Views\Admin\Tulovlar.cshtml" />
+    <Content Include="Views\Admin\BemXab.cshtml" />
+    <Content Include="Views\Asosiy\Index.cshtml" />
+    <Content Include="Views\Asosiy\Qushish.cshtml" />
+    <Content Include="Views\Asosiy\Register.cshtml" />
+    <Content Include="Views\Asosiy\Saqlash.cshtml" />
+    <Content Include="Views\Doktor\Qidirish.cshtml" />
+    <Content Include="Views\Stomatologiya\Qidirish.cshtml" />
+    <Content Include="Views\Yangilik\Create.cshtml" />
+    <Content Include="Views\Yangilik\Delete.cshtml" />
+    <Content Include="Views\Yangilik\Details.cshtml" />
+    <Content Include="Views\Yangilik\Edit.cshtml" />
+    <Content Include="Views\Yangilik\Index.cshtml" />
+    <Content Include="Views\Yangilik\Umumiy.cshtml" />
+    <Content Include="Views\Yangilik\Saqlash.cshtml" />
+    <Content Include="Views\Bot\Create.cshtml" />
+    <Content Include="Views\Bot\Delete.cshtml" />
+    <Content Include="Views\Bot\Details.cshtml" />
+    <Content Include="Views\Bot\Edit.cshtml" />
+    <Content Include="Views\Bot\Index.cshtml" />
+    <Content Include="Views\Doktor\Sozlamalar.cshtml" />
+    <Content Include="Views\Bemor\Sozlamalar.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905061305593_InitialCreate.resx">
+      <DependentUpon>201905061305593_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905061748060_yangi1.resx">
+      <DependentUpon>201905061748060_yangi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905071226510_yangi2.resx">
+      <DependentUpon>201905071226510_yangi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905071720146_yani3.resx">
+      <DependentUpon>201905071720146_yani3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905071734471_yangi4.resx">
+      <DependentUpon>201905071734471_yangi4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905071832153_yangi5.resx">
+      <DependentUpon>201905071832153_yangi5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905071850342_yangi6.resx">
+      <DependentUpon>201905071850342_yangi6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905251242197_yangi7.resx">
+      <DependentUpon>201905251242197_yangi7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905260928334_yangi8.resx">
+      <DependentUpon>201905260928334_yangi8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905261956272_yangi9.resx">
+      <DependentUpon>201905261956272_yangi9.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28981</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:28981/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

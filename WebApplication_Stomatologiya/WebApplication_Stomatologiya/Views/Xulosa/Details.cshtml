@@ -1,0 +1,42 @@
+﻿@model WebApplication_Stomatologiya.Models.Xulosa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Xulosa</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Korik.Tashxis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Korik.Tashxis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Summa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Summa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vaqt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vaqt)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

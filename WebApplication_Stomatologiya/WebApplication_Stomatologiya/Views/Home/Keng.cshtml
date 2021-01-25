@@ -1,0 +1,16 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+<br /><br />
+
+
+                @foreach (Yangilik t in Model.Yangilik)
+                {
+                    <h1>@t.Mavzu</h1>
+                    <br />
+                    <h4>@t.Batafsil</h4>
+                    
+                }
+<br />
+<a href="/Home/Index" class="btn btn-danger" >Ortga</a>
+<br /><br />
+

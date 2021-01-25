@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Qabul";
+}
+
+<h2>Qabul</h2>
+
+<form action="/Doktor/QabulVaqti">
+    <label>Sanani tanlang</label>
+<input type="date" name="vaqt"/>
+    <input type="text" name="D_Id" value="@ViewBag.id" hidden="hidden"/>
+    <input type="submit" value="Tanlash" class="btn btn-success" />
+</form>
+<br /><br />

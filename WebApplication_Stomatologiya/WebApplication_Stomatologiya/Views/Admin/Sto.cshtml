@@ -1,0 +1,45 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+@{
+    ViewBag.Title = "JsonSearch";
+}
+
+<h2>JsonSearch</h2>
+
+
+
+
+    <select id="guruh">
+        <option>Tanlang...</option>
+        @foreach(Stomatologiya s in Model.Stomatologiya)
+        {
+            <option value="@s.Id">@s.Nomi</option>
+        }
+    </select>
+    <select id="fan"></select>
+
+    <p id="rasm"></p>
+
+<br />
+<div id="results"></div>
+<script type="text/javascript">
+    $('#guruh').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Admin/getFan/' + id;
+       
+
+        $.post(ur, function (data) {
+            var imgList = "";
+            $('#fan').empty();
+            $('#fan').append('<option disabled selected>Tanlang</option>');
+            $.each(data, function (index, subCatObj) {
+                $('#fan').append('<option value="' + subCatObj.Id + '">' + subCatObj.Ism + '</option>');
+                imgList += '<li><img src= "' + "/Rasmlar/" + subCatObj.Rasm + '"></li>';
+
+            });
+            $('#rasm').append(imgList);
+
+
+        });
+    });
+</script>

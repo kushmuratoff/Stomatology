@@ -1,0 +1,129 @@
+﻿@model WebApplication_Stomatologiya.Models.Doktor
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Doktor</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Familya, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Familya)
+                @Html.ValidationMessageFor(model => model.Familya)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Ism, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Ism)
+                @Html.ValidationMessageFor(model => model.Ism)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sharif, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Sharif)
+                @Html.ValidationMessageFor(model => model.Sharif)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TugVaqti, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TugVaqti)
+                @Html.ValidationMessageFor(model => model.TugVaqti)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PasSeria, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PasSeria)
+                @Html.ValidationMessageFor(model => model.PasSeria)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PasNomer, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PasNomer)
+                @Html.ValidationMessageFor(model => model.PasNomer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.KimTomBer, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KimTomBer)
+                @Html.ValidationMessageFor(model => model.KimTomBer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Rasm, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rasm)
+                @Html.ValidationMessageFor(model => model.Rasm)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.YashManzil, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.YashManzil)
+                @Html.ValidationMessageFor(model => model.YashManzil)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TelNomer, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TelNomer)
+                @Html.ValidationMessageFor(model => model.TelNomer)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserlarId, "UserlarId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("UserlarId", String.Empty)
+                @Html.ValidationMessageFor(model => model.UserlarId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StomatologiyaId, "StomatologiyaId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("StomatologiyaId", String.Empty)
+                @Html.ValidationMessageFor(model => model.StomatologiyaId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

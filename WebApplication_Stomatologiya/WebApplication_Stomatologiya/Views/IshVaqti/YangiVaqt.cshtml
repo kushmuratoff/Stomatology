@@ -1,0 +1,35 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil"></i>
+
+                </div>
+                <div class="form">
+                  
+                    <p style="color: red; text-align: center">@ViewBag.habar</p>
+                    <form action="/IshVaqti/YangiVaqt" method="post">
+                        <input type="text" name="DoktorId" value="@ViewBag.DokId" placeholder="Kelish vaqti" required="" hidden="hidden">
+                        <input type="text" name="KelishV" placeholder="Kelish vaqti" required="">
+                        <input type="text" name="KetishV" placeholder="Ketish vaqti" required="">
+                        <label>Hafa kuni</label>&nbsp;&nbsp;
+                        <select name="KunId" style="width:255px;">
+                            <option>Kunni tanlang</option>
+                        @foreach (Kun k in Model.Kun)
+                        {
+                            <option value="@k.Id">@k.Nomi</option>
+                        }
+                        </select><br /><br />
+                        <input type="submit" value="Saqlash">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

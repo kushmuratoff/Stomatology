@@ -1,0 +1,36 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "Saqlash";
+}
+
+<h2>Saqlash</h2>
+
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil"></i>
+
+                </div>
+                <div class="form">
+                    <h3>Stomatologiya ma'lumoti</h3>
+
+                    <form action="/Yangilik/Saqlash" method="post" enctype="multipart/form-data">
+                        <input type="text" name="Mavzu" placeholder="Mavzu" required="">
+                        <label>Rasmi</label> <input type="file" name="Imagefile" placeholder="" required="">
+                        <br /><br />                        
+                        <input type="text" name="Batafsil" placeholder="Batafsil" required="">                        
+                        <input type="text" name="StoId" placeholder="Login" required="" value="@ViewBag.Id">                       
+                        <input type="submit" value="Saqlash">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

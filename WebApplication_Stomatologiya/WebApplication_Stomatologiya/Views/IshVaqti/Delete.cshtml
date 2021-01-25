@@ -1,0 +1,56 @@
+﻿@model WebApplication_Stomatologiya.Models.IshVaqti
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>IshVaqti</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Doktor.Familya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doktor.Familya)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kun.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kun.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KelishV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KelishV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KetishV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KetishV)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

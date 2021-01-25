@@ -1,0 +1,106 @@
+﻿@model WebApplication_Stomatologiya.Models.Bemor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bemor</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Userlar.Logini)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Userlar.Logini)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Familya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Familya)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ism)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ism)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sharif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sharif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TugVaqti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TugVaqti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PasSeria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PasSeria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PasNomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PasNomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KimTomBer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KimTomBer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YashManzil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YashManzil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelNomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelNomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EskiKasallari)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EskiKasallari)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

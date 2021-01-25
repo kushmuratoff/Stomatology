@@ -1,0 +1,58 @@
+﻿@model WebApplication_Stomatologiya.Models.DoktorVaqti
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DoktorVaqti</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bemor.Familya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bemor.Familya)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doktor.Familya)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doktor.Familya)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sanasi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sanasi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vaqti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vaqti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.holati)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.holati)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

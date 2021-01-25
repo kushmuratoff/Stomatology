@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "JsonSearch";
+}
+
+<h2>JsonSearch</h2>
+
+
+
+<form>
+    <select>
+        <option>Tanlang...</option>
+    </select>
+    <select>
+
+    </select>
+    
+    <input type="submit" value="Поиск" />
+</form>
+<br />
+<div id="results"></div>
+<script type="text/javascript">
+    $('#guruh').on('change', function (e) {
+        var id = e.target.value;
+        var ur = '/Home/getFan/' + id;
+        $.post(ur, function (data) {
+            $('#fan').empty();
+            $('#fan').append('<option disabled selected>Tanlang</option>');
+            $.each(data, function (index, subCatObj) {
+                $('#fan').append('<option value="' + subCatObj.Id + '">' + subCatObj.Fan.Nomi + '</option>');
+            });
+
+        });
+    });
+</script>

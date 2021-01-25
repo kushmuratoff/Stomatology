@@ -1,0 +1,46 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "Saqlash";
+}
+
+<h2>Saqlash</h2>
+
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil"></i>
+
+                </div>
+                <div class="form">
+                    <h3>Stomatologiya ma'lumoti</h3>
+                  
+                    <form action="/Asosiy/Saqlash" method="post" enctype="multipart/form-data">
+                        <input type="text" name="Nomi" placeholder="Nomi" required="">                       
+                        <label>Logatipi</label> <input type="file" name="Imagefile" placeholder="" required="">
+                        <br /><br />
+                        <label>Tuman</label> <select name="TumanId" style="width:280px; height:40px;">
+                        <option>Tanlang...</option>
+                        @foreach(Tuman t in Model.Tuman)
+                        {
+                            <option value="@t.Id">@t.Nomi</option>
+                        }
+                        </select>
+                        <br /><br />
+                        <input type="text" name="TelNomer" placeholder="Telefon raqam" required="">
+                        <input type="text" name="Manzil" placeholder="Manzil" required="">                       
+                        <input type="text" name="Login" placeholder="Login" required="" value="@ViewBag.Login">
+                        <input type="text" name="Parol" placeholder="Parol" required="" value="@ViewBag.Parol">
+                        <input type="submit" value="Saqlash">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

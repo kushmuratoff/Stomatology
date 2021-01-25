@@ -1,0 +1,49 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "Sozlamalar";
+}
+
+@foreach (Doktor s in Model.Doktor)
+{
+    <section>
+        <div class="modal-body">
+            <div class="loginf_module">
+                <div class="module form-module">
+                    <div class="toggle">
+                        <i class="fa fa-times fa-pencil"></i>
+
+                    </div>
+                    <div class="form">
+                        <h3 style="text-align:center">Doktor</h3>
+                        <p style="color: red; text-align: center"></p>
+                        <form action="/Doktor/Sozlamalar" method="post" enctype="multipart/form-data">
+                            <label>Familya</label><br />
+                            <input type="text" name="Familya" placeholder="Nomi" required="" value="@s.Familya">
+                            <label>Ism</label><br />
+                            <input type="text" name="Ism" placeholder="Manzil" required="" value="@s.Ism">
+                            <label>Sharif</label><br />
+                            <input type="text" name="Sharif" placeholder="Manzil" required="" value="@s.Sharif">
+                            <label>Telefon nomer</label><br />
+                            <input type="text" name="TelNomer" placeholder="Tel Nomeri" required="" value="@s.TelNomer">
+                            <label>Telefon nomer</label><br />
+                            <input type="text" name="YashManzil" placeholder="Yashash manzili" required="" value="@s.YashManzil">
+                            <label>Logini</label><br />
+                            <input type="text" name="Login" placeholder="Login" required="" value="@s.Userlar.Logini">
+                            <label>Parol</label><br />
+                            <input type="text" name="Parol" placeholder="Parol" required="" value="@s.Userlar.Paroli">
+                            <input type="text" name="UsId" placeholder="Parol" required="" value="@s.UserlarId" hidden="hidden">
+                            <input type="text" name="Id" placeholder="Parol" required="" value="@s.Id" hidden="hidden">
+
+                            <input type="submit" value="Saqlash">
+                        </form>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+}

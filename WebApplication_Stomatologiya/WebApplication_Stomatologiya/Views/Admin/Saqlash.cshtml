@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Saqlash";
+}
+
+<h2>Saqlash</h2>
+
+<section>
+    <div class="modal-body">
+        <div class="loginf_module">
+            <div class="module form-module">
+                <div class="toggle">
+                    <i class="fa fa-times fa-pencil"></i>
+
+                </div>
+                <div class="form">
+                    <h3>Login va Parolingizni kiriting</h3>
+                    <p style="color: red; text-align: center">@ViewBag.habar</p>
+                    <form action="/Admin/Saqlash" method="post" enctype="multipart/form-data">
+                        <input type="text" name="Fam" placeholder="Familya" required="">
+                        <input type="text" name="Ism" placeholder="Ism" required="">
+                        <input type="text" name="Shar" placeholder="Sharf" required="">
+                        <label>Tugilgan sana</label> <input type="date" name="tugyil" placeholder="Tug'ilgan sana'" required="">
+                        <br /><br />
+                        <label>Rasm</label> <input type="file" name="Imagefile" placeholder="" required="">
+                        <br /><br />
+                        <input type="text" name="tel" placeholder="Telefon raqam" required="">
+                        <input type="text" name="PasS" placeholder="Pasport  seria" required="">
+                        <input type="text" name="PasN" placeholder="Pasport  nomer" required="">
+                        <input type="text" name="Ktb" placeholder="Kim tomonidan berilgan" required="">
+                        <input type="text" name="Manzil" placeholder="Yashash manzili" required="">
+                        <input type="text" name="StoId" placeholder="StoId" required="" value="@ViewBag.Id">
+                        <input type="text" name="Login" placeholder="Login" required="" value="@ViewBag.Login">
+                        <input type="text" name="Parol" placeholder="Parol" required="" value="@ViewBag.Parol">
+                        <input type="submit" value="Saqlash">
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>

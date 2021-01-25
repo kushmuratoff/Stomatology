@@ -1,0 +1,45 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+<br /><br />
+<table class="table">
+<tr>
+    <td>1</td>
+    <td>Dushanba</td>
+    <td>Seshanba</td>
+    <td>Chorshanba</td>
+    <td>Payshanba</td>
+    <td>Juma</td>
+    <td>Shanba</td>
+    <td>Yakshanba</td>
+
+</tr>
+</table>
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 w3_ban1">
+                    <div class="card">
+
+                        
+                    </div>
+                </div>
+
+                @*@foreach (IshVaqti t in Model.IshVaqti)
+                {
+                    <div class="col-md-4 col-sm-12 w3_ban1">
+                        <div class="card">
+                         
+                            <div class="card-body">
+                                <h5 class="card-title">@t.Doktor.Familya @t.Doktor.Ism @t.Doktor.Sharif</h5>
+                                <a href="/Home/Keng/@t.Id" class="btn btn-primary">Batafsil</a>
+                            </div>
+                        </div>
+                    </div>
+                }*@
+
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,93 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "Anketasi";
+}
+
+<h1 style="text-align: center; color: green">Anketasi</h1>
+<table class="table" style="font-size:22px; ">
+    @foreach(Korik k in Model.Korik)
+    {
+        <tr >
+            <td style="color: black; text-align: right;">
+                Davolovchi doktor:
+            </td>
+            <td style="color:black;">
+                @k.Doktor.Familya @k.Doktor.Ism @k.Doktor.Sharif
+            </td>
+    </tr>
+         <tr>
+             <td style ="color:black; text-align:right;">
+                 Bemor:
+             </td>
+             <td style="color:black;">
+                 @k.Bemor.Familya @k.Bemor.Ism @k.Bemor.Sharif
+             </td>
+    </tr>
+        <tr>
+            <td style="color: black; text-align: right;">
+                Shikoyat:
+            </td>
+            <td style="color:black;">
+                @k.Shikoyat
+            </td>
+    </tr>
+          <tr>
+            <td style="color: black; text-align: right;">
+                Tashxis:
+            </td>
+            <td style="color:black;">
+                @k.Tashxis
+            </td>
+    </tr>
+          <tr>
+              <td style="color: black; text-align: right;">
+                  Kasallik rivojlanishi:
+              </td>
+              <td style="color:black;">
+                  @k.KasRivoj
+              </td>
+    </tr>
+           <tr>
+               <td style="color: black; text-align: right;">
+                   Labaratoriya natijasi:
+               </td>
+               <td style="color:black;">
+                   @k.LabNatija
+               </td>
+    </tr>  
+         <tr>
+             <td style="color: black; text-align: right;">
+                 Tishlash:
+             </td>
+             <td style="color:black;">
+                 @k.Tishlash
+             </td>
+    </tr>  
+         <tr>
+             <td style="color: black; text-align: right;">
+                 Og'iz bo'shligi, milk, tanglay shilliq pardasining holati:
+             </td>
+             <td style="color:black;">
+                 @k.OgizBosh
+             </td>
+    </tr>  
+         <tr>
+             <td style="color: black; text-align: right;">
+                 Davolanish narxi:
+                 <hr />
+             </td>
+             <td style="color:black;">
+                 @k.Summa so'm
+                 <hr />
+             </td>
+    </tr>
+        
+    }
+    
+</table>
+
+    <a href="/Admin/Pfdga/@ViewBag.Id" class="btn btn-danger">PDF ko'rinishi</a>
+
+<br /><br />

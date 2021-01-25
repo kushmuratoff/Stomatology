@@ -1,0 +1,32 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+<a href="/Admin/Register/@ViewBag.Id">Doktor Qo'shish </a>
+<br />
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                @foreach (Doktor x in Model.Doktor)
+                {
+
+                    <div class="col-md-4 col-sm-12 w3_ban">
+                        <div class="card">
+                            <img class="card-img-top" src="/Rasmlar/@x.Rasm" width="180" height="320" alt="Card image cap">
+                            <div class="card-body">
+
+                                <p class="card-text">@x.Familya  @x.Ism @x.Sharif  </p>
+
+
+                                @*<p class="card-text">Manzil: @x.Uy.Manzil    </p>
+    <p class="card-text">@x.Nechnchi_qavat - qavat honalar soni: @x.Xonalar_soni ta   </p>
+*@
+                                <a href="/IshVaqti/Vaqtlar/@x.Id" class="btn btn-primary">Ish vaqti</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

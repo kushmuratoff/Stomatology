@@ -1,0 +1,24 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "YangiBemor";
+}
+
+<h2>YangiBemor</h2>
+<table class="table">
+    @foreach (DoktorVaqti d in Model.DoktorVaqti)
+    {
+    <tr>
+        <td>@d.Bemor.Familya</td>
+        <td>@d.Bemor.Ism</td>
+        <td>@d.Bemor.Sharif</td>
+        <td>@d.Sanasi.Value.Day -@d.Sanasi.Value.Month -@d.Sanasi.Value.Year</td>
+        <td>@d.vaqti</td>
+        <td><a href="/Doktor/TashxisQ/?Did=@d.DoktorId&Bid=@d.BemorId">Tashxis qo'yish</a></td>
+        <td><a href="/Bemor/Index/@d.BemorId">Batafsil</a></td>
+        <td><a href="/Doktor/RemoveB/@d.Id"><font color="red">O'chirish</font></a></td>
+    </tr>
+    }
+</table>
+

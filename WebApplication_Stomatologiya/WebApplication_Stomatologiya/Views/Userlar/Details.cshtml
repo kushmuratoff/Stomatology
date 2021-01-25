@@ -1,0 +1,42 @@
+﻿@model WebApplication_Stomatologiya.Models.Userlar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Userlar</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Rollar.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rollar.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logini)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logini)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paroli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paroli)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

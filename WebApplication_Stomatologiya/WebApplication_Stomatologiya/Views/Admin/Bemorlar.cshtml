@@ -1,0 +1,33 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "YangiBemor";
+}
+
+<h2>Davolanayotgan bemorlar</h2>
+<table class="table">
+    <tr>
+        <th>Familiya</th>
+        <th>Ism</th>
+        <th>Telefon nomer</th>
+        <th>Sana</th>
+        <th>Vaqti</th>
+    
+    </tr>
+    @foreach (DoktorVaqti d in Model.DoktorVaqti)
+{
+    <tr>
+        <td>@d.Bemor.Familya</td>
+        <td>@d.Bemor.Ism</td>
+        <td>@d.Bemor.TelNomer</td>
+        <td>@d.Sanasi.Value.Day-@d.Sanasi.Value.Month-@d.Sanasi.Value.Year </td>
+        <td>@d.vaqti</td>
+        <td><a href="/Admin/Anketasi/@d.BemorId">Anketasi</a></td>
+        <td><a href="/Admin/BemorYV/?Did=@d.DoktorId&Id=@d.Id">Vaqt belgilash</a></td>
+        <td><a href="/Admin/Yakun/?Did=@d.DoktorId&Id=@d.Id">Davolashni yakunlash</a></td>
+        <td>@if (@d.Sanasi == DateTime.Today) { <font color="green">Bugun</font>}</td>
+    </tr>
+}
+</table>
+

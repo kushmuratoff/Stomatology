@@ -1,0 +1,43 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<a href="/Asosiy/Register" style="color:green;">Stomatologiya qo'shish</a>
+
+<br /><br />
+
+<div class="row">
+    <div class="col-md-4" style="font-size:20px; color:blue;">
+       Nomi
+        <hr />
+    </div>
+    <div class="col-md-4" style="font-size: 20px; color: blue;">
+       Manzili
+    </div>
+    <div class="col-md-4" style="font-size: 20px; color: blue;">
+      Telefon raqami
+    </div>      
+    @foreach (Stomatologiya d in Model.Stomatologiya)
+    {
+        <div class="col-md-4" style="font-size:20px;">
+            @d.Nomi
+            <hr />
+
+        </div>
+         <div class="col-md-4" style="font-size:20px;">
+            @d.Manzil
+            
+        </div>
+         <div class="col-md-4" style="font-size:20px;">
+            @d.TelNomer
+         
+
+        </div>      
+
+    }
+</div>
+
+<br /><br />

@@ -1,0 +1,38 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+
+@foreach (Stomatologiya item in Model.Stomatologiya)
+{
+  <div class="stonom">
+    @item.Nomi
+</div>
+<div style="text-align:center"><p>Manzil:<h4>@item.Manzil</h4></p></div>
+<div style="text-align:center"><p>Telefon raqam:<h5>@item.TelNomer</h5></p></div>
+}
+
+
+<section class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+    <div class="bannerbottom py-lg-5 py-md-4 py-md-3 py-2">
+        <div class="container">
+            <div class="row">
+                @foreach (Doktor s in Model.Doktor)
+                {
+                    <div class="col-md-4 col-sm-12 w3_ban1">
+                        <div class="card">
+                            <img class="card-img-top" src="/Rasmlar/@s.Rasm" alt="Card image cap" width="400" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">@s.Familya @s.Ism @s.Sharif </h5>                                
+                                <h3 class="card-text">@s.Stomatologiya.Nomi doktori</h3>
+                                <p class="card-text">Tel: @s.TelNomer</p>
+
+                                <a href="/Stomatologiya/Kabinet/@s.Id" class="btn btn-primary">Qabuliga yozilish</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

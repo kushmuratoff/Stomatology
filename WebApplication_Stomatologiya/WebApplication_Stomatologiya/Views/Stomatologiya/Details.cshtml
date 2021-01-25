@@ -1,0 +1,66 @@
+﻿@model WebApplication_Stomatologiya.Models.Stomatologiya
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Stomatologiya</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tuman.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tuman.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Userlar.Logini)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Userlar.Logini)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logatip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Logatip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manzil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manzil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelNomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelNomer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

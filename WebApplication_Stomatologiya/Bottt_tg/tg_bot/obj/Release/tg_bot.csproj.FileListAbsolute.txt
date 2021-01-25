@@ -1,0 +1,46 @@
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\tg_bot.exe.config
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\NetTelegramBotApi.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\Newtonsoft.Json.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\Telegram.Bot.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\Newtonsoft.Json.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\bin\Release\Telegram.Bot.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Release\tg_bot.csprojResolveAssemblyReference.cache
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Release\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot\tg_bot\obj\Release\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe.config
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\obj\Release\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\obj\Release\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\tg_bot.pdb
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.xml
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Document\Visual Studio 2013\Projects\tg_bot — копия\tg_bot\obj\Release\tg_bot.csprojFakesResolveAssemblyReference.cache
+D:\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe.config
+D:\tg_bot — копия\tg_bot\obj\Release\tg_bot.exe
+D:\tg_bot — копия\tg_bot\obj\Release\tg_bot.pdb
+D:\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe
+D:\tg_bot — копия\tg_bot\bin\Release\tg_bot.pdb
+D:\tg_bot — копия\tg_bot\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+D:\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.dll
+D:\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.dll
+D:\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.xml
+D:\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.xml
+D:\tg_bot — копия\tg_bot\obj\Release\tg_bot.csprojFakesResolveAssemblyReference.cache
+D:\tg_bot — копия\tg_bot\obj\Release\tg_bot.csprojResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe.config
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Release\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Release\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\tg_bot.exe
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\tg_bot.pdb
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.dll
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\Newtonsoft.Json.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\bin\Release\Telegram.Bot.xml
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Release\tg_bot.csprojFakesResolveAssemblyReference.cache
+C:\Users\Samariddin\Desktop\tg_bot — копия\tg_bot\obj\Release\tg_bot.csprojResolveAssemblyReference.cache

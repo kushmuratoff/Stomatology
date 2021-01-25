@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NetTelegramBotApi</id>
+    <version>4.2.0</version>
+    <title>NetTelegramBotApi</title>
+    <authors>Dmitry Popov</authors>
+    <owners>Dmitry Popov</owners>
+    <projectUrl>https://github.com/justdmitry/NetTelegramBotApi</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/justdmitry/NetTelegramBotApi/master/package-icon.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Telegram Bot API library</description>
+    <summary />
+    <releaseNotes>See https://github.com/justdmitry/NetTelegramBotApi/releases/tag/v4.2.0</releaseNotes>
+    <copyright>Copyright © Dmitry Popov, 2015-2017</copyright>
+    <tags>telegram bot api</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+      </group>
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5, .NETFramework4.6" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5, .NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5, .NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,31 @@
+﻿@model WebApplication_Stomatologiya.Models.Sahifa
+@using WebApplication_Stomatologiya.Models
+
+@{
+    ViewBag.Title = "YangiBemor";
+}
+
+<h2>To'lovlar ro'yhati</h2>
+<table class="table">
+    <tr>
+        <th>Familiya</th>
+        <th>Ism</th>
+        <th>Telefon nomer</th>
+        <th>Summa</th>
+        <th>Holati</th>
+
+    </tr>
+    @foreach (Korik d in Model.Korik)
+    {
+        <tr>
+            <td>@d.Bemor.Familya</td>
+            <td>@d.Bemor.Ism</td>
+            <td>@d.Bemor.TelNomer</td>
+            <td>@d.Summa </td>
+            <td>@if (@d.Holat == 0) { <font color="red">To'lanmagan</font> <a href="/Admin/BemXab/@d.Id" style="margin-left:20px; color: blue">Xabar yuborish</a><a href="/Admin/TulovT/?Id=@d.Id&StoId=@ViewBag.StoId" style="margin-left:20px;color:green;">Tasdiqlash</a>}else{<font color="green">To'langan</font>}</td>
+           
+
+        </tr>
+    }
+</table>
+<h1 class="btn btn-success">To'langan summa: @ViewBag.s1 so'm</h1> <h1 class="btn btn-danger">To'lanmagan summa: @ViewBag.s2 so'm</h1><br /><br />

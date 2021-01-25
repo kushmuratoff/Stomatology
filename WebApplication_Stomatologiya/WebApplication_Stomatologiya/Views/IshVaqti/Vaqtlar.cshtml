@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebApplication_Stomatologiya.Models.IshVaqti>
+
+@{
+    ViewBag.Title = "Vaqtlar";
+}
+
+<h2>Doktorning hafta davomida ishlash vaqtlari</h2>
+<br />
+<p><a href="/IshVaqti/YangiVaqt/@ViewBag.Id">Yangi kun qo'shish</a></p><br /><br />
+<table class="table">
+    <tr>
+       
+        <th>
+           Hafata kunlari
+        </th>
+        <th>
+           Kelish vaqti
+        </th>
+        <th>
+           Ketish vaqti
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Kun.Nomi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KelishV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KetishV)
+        </td>
+        <td>
+           <a href="/IshVaqti/Change/?Id=@ViewBag.Id&KunId=@item.KunId">O'zgartirish</a>
+        </td>
+    </tr>
+}
+
+</table>
